@@ -12,14 +12,11 @@ nanogenmo = ""
 for index, row in df.iterrows():
     current_letter = row['Letter']
     
-
-
-    
     if current_letter == "'space'":
         nanogenmo = nanogenmo + " "
         spaces = spaces + 1
     elif current_letter == "'dot'":
-        nanogenmo = nanogenmo + ". /n"
+        nanogenmo = nanogenmo + "."
     elif current_letter == "'comma'":
         nanogenmo = nanogenmo + ", "
     else:
